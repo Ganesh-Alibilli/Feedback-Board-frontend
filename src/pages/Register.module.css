@@ -1,0 +1,90 @@
+.registerBackground {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+}
+
+.registerCard {
+  background: #f3fcfa;
+  border: 2.2px solid #bdfbf0;
+  border-radius: 22px;
+  box-shadow: 0 8px 32px #a7efea24, 0 2px 10px #c3ffe87b;
+  padding: 2.7rem 2.5rem 2.1rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 340px;
+  max-width: 390px;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.title {
+  font-size: 1.55rem;
+  color: #2ab68b;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  margin: 0;
+}
+
+.icon {
+  font-size: 2.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.formStack {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.input {
+  font-size: 1.1rem;
+  padding: 0.82rem 1.13rem;
+  border: 1.5px solid #b2e9d6;
+  border-radius: 8px;
+  background: #fafffd;
+  transition: border 0.17s, box-shadow 0.17s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #44e2ab;
+  background: #e9fdf7;
+  box-shadow: 0 2px 12px #89efb854;
+}
+
+.registerButton {
+  font-size: 1.1rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #35df9c 35%, #46e2e9 95%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.88rem 0;
+  margin-top: 0.3rem;
+  box-shadow: 0 1px 12px #1cf9be69;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.22s;
+}
+
+.registerButton:hover:enabled {
+  background: linear-gradient(90deg, #28c084 35%, #2edabf 95%);
+  box-shadow: 0 3px 14px #44e2ab44;
+}
+
+.message {
+  margin-top: 1.05rem;
+  font-size: 1rem;
+  color: #1ca585;
+}

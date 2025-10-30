@@ -1,0 +1,212 @@
+.feedbackPage {
+   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  width: 100vw;
+}
+
+.statusTabs {
+  margin-bottom: 1.8rem; /* Adjust value as needed */
+}
+
+/* Center and limit content width elegantly for large screens */
+.centeredWrap {
+  width: 100%;
+  max-width: 600px;
+  margin: 36px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 0 1rem;
+}
+
+/* Stylish card for form */
+.formCard {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 30px #2979a120, 0 0px 4px #59b5e010;
+  padding: 2rem 2.5rem 1.3rem 2.5rem;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 3rem;
+  margin-bottom: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.2rem;
+  animation: fadeInUp 0.8s;
+}
+
+.formTitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+ color: #11a580;
+  text-align: left;
+  margin-bottom: 0.85rem;
+  letter-spacing: 0.25px;
+}
+
+/* Header for feedback list */
+.sectionTitle {
+  font-size: 1.45rem;
+  font-weight: bold;
+  color: #15509e;
+  text-align: left;
+  margin-bottom: 1.1rem;
+  margin-top: 0.5rem;
+  letter-spacing: 0.7px;
+}
+
+/* Feedback ideas list styling */
+.feedbackListContainer {
+  width: 100vw;
+  max-width: 1180px;
+  padding: 2.5rem 2vw 2.3rem 2vw;
+  box-sizing: border-box;
+  margin: 0 auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Feedback list item as card with nice spacing */
+.feedbackCard {
+  background: #f8fbff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #2992b312;
+  margin-bottom: 1.1rem;
+  padding: 1.25rem 1.3rem 1.15rem 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+
+.feedbackCard:hover {
+  box-shadow: 0 6px 20px #2992b330;
+  background: #eaf7ff;
+}
+
+.feedbackTableWrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.feedbackTable {
+  width: 100%;
+  min-width: 820px;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fafdff; /* cool blue white */
+  border-radius: 18px;
+  box-shadow: 0 8px 40px #46c5fd17, 0 1px 8px #c6eafe20;
+  overflow: hidden;
+  margin-bottom: 2.6rem;
+}
+
+.feedbackTable th, .feedbackTable td {
+  padding: 1.18rem 1.35rem;
+  border-bottom: 1px solid #f3f7fb;
+  text-align: left;
+  font-size: 1.11rem;
+}
+
+.feedbackTable th {
+  background: #e1f2fb;        /* fresh sky blue */
+  font-weight: bold;
+  color: #1a577a;
+  letter-spacing: 0.7px;
+}
+
+.feedbackTable tr:last-child td {
+  border-bottom: none;
+}
+
+.feedbackTable td {
+  background: #fafdff;
+}
+.feedbackTable tr {
+  transition: background 0.2s;
+}
+.feedbackTable tr:hover td {
+ background: #ecfbff;
+}
+.formCard {
+  background: #e9fcfa;  /* gentle mint tint */
+  border: 2px solid #d6f3f1;
+  border-radius: 18px;
+  box-shadow: 0 2px 30px #5cd6e617, 0 1px 6px #c8f7fa70;
+  padding: 2rem 2.6rem 1.7rem 2.6rem;
+  width: 100%;
+  max-width: 500px;
+  margin: 2.8rem auto 2.2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.2rem;
+  animation: fadeInUp 0.8s;
+}
+.input, .textarea {
+  border: 1.7px solid #b3dce7;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-size: 1.10rem;
+  background: #f6fffe;
+  transition: border 0.19s, box-shadow 0.18s;
+}
+.input:focus, .textarea:focus {
+  outline: none;
+  border-color: #5dc9ce;
+  background: #e2f8fa;
+  box-shadow: 0 2px 12px #8ee5ee22;
+}
+.ideaTitle {
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #134392;
+  margin-bottom: 0.14rem;
+}
+
+.ideaMeta {
+  font-size: 0.97rem;
+  font-weight: 500;
+  color: #2376b7;
+}
+
+.ideaDesc {
+  font-size: 1.02rem;
+  color: #334155;
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.voteBtn {
+  border: none;
+  outline: none;
+  background: linear-gradient(90deg, #128ac6, #20e3d2);
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.4rem 1.12rem;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px #299ec820;
+  cursor: pointer;
+  margin-top: 0.6rem;
+  align-self: flex-start;
+  transition: background 0.18s, box-shadow 0.22s;
+}
+
+.voteBtn:hover {
+  background: #1273ad;
+  box-shadow: 0 4px 12px #1fa7a833;
+}
+
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(32px);}
+  to { opacity: 1; transform: translateY(0);}
+}

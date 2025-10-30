@@ -1,0 +1,50 @@
+.formStack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.05rem;
+  margin-top: 0.85rem;
+}
+
+.input,
+.textarea {
+  border: 1.5px solid #bddafd;
+  border-radius: 7px;
+  padding: 0.75rem 1rem;
+  font-size: 1.07rem;
+  background: #f8fcff;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: #2473c3;
+  background: #f0f8ff;
+  box-shadow: 0 2px 10px #bddafd2a;
+}
+
+.submitBtn {
+  background: linear-gradient(90deg, #299be3, #1edfe8);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 7px;
+  padding: 0.7rem 1.6rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.18s, box-shadow 0.22s;
+  box-shadow: 0 0px 6px #2a75bb33;
+  margin-top: 0.2rem;
+}
+
+.submitBtn:hover {
+  background: #1860b1;
+}
+
+.message {
+  font-size: 1.04rem;
+  margin: 0.2rem 0 0 0;
+  padding: 0.35rem;
+  text-align: left;
+  color: #166674;
+}
